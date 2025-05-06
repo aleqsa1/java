@@ -5,11 +5,6 @@ public class User {
 	private String name;
 	private String email;
 	
-	public User( String name, String email) {
-		id = 0;
-		this.name = name;
-		this.email = email;
-	}
 	public User( String name, String email, long id) {
 		this.id = id;
 		this.name = name;
