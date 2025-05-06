@@ -6,9 +6,9 @@ import java.sql.SQLException;
 import java.sql.Statement;
 
 public class DbUserWriteRepository implements UserWriteRepository{
-	final String url = "jdbc:sqlserver://ALEQSA;databaseName=student;encrypt=true;trustServerCertificate=true";
-	final String userW = "sa";
-	final String password = "aleqsi2003";
+	 String url = "jdbc:sqlserver://ALEQSA;databaseName=student;encrypt=true;trustServerCertificate=true";
+	 String userW = "sa";
+	 String password = "aleqsi2003";
 
 	public void save(User user) {
 		try (Connection con = DriverManager.getConnection(url, userW, password);
